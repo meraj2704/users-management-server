@@ -20,6 +20,11 @@ app.get('/users', (req,res)=>{
   res.send(users);
 })
 
+app.post('/users', (req,res) =>{
+  console.log('Api is hitting');
+  console.log(req.body);
+})
+
 app.listen(port, ()=>{
   console.log(`Srver is running on Port : ${port}`);
 })
